@@ -12,7 +12,8 @@ package:
 source:
   - url: https://pypi.io/packages/source/p/polars-u64-idx/polars_u64_idx-{{ version }}.tar.gz
     sha256: c95960576997f2f230e04085de96719381b453217d61bd76ee4219743353d00e
-
+    patches:
+      - 0001-Fixed-rust-numpy-issue.patch
 build:
   number: 0
   skip: true  # [win and python_impl=="pypy"]
